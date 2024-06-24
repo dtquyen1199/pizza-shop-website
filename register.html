@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />	
+	<meta name="description" content="Web development" />
+	<meta name="keywords"    content="Registration Form" />
+	<meta name="author"      content="put your name here" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<script src="js/script.js"></script>
+	<title>Bruno Pizzeria</title>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<a href="index.html">BRUNO</a>
+		</div>		
+		<div id="pages">
+			<nav> 
+				<ul class="nav">
+					<li><a href="index.html">HOME</a></li>
+					<li><a class="currentpage" href="register.html">SIGN UP</a></li>
+					<li><a href="order.html">ORDER</a></li>
+					<li><a href="features.html">FEATURES</a></li>	
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+	<div id="heroimgcontainer"> Hero Image 
+		<div id="heroimage2"></div>
+			<div id="herotext">
+				<h1>Sign up to get 20% off!</h1>
+				<p>Sign up to get points of your order and get notified about our latest promotions and events!</p>
+			</div>
+	</div>
+	
+	<main>
+		<section> 
+			<form id="regform" method="post"
+				action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php">
+				<fieldset class="borderedfieldset">
+					<legend><h2>About Yourself</h2></legend>
+						<div class="textinput">
+							<label for="email">Email</label>
+							<input id="email" type="text" name="email" maxlength="20"><br>
+						</div>
+						<div class="textinput">
+							<label for="pwd1">Password</label>
+							<input id="pwd1" type="password" name="pwd1" />
+						</div>
+						<div class="textinput">
+							<label for="pwd2">Retype password</label>
+							<input id="pwd2" type="password" name="pwd2" />
+						</div>
+						<div class="textinput">
+							<label for="name">Name</label>
+							<input id="name" type="text" name="name" />
+						</div>
+						<div class="radioinput">
+							<fieldset>
+								<legend>Gender</legend>
+								<input id="genm" type="radio" name="gender" value="male">
+								<label for="genm">Male</label>
+								<input id="genf" type="radio" name="gender" value="female">
+								<label for="genf">Female</label>
+								<input id="geno" type="radio" name="gender" value="other">
+								<label for="geno">Other</label>
+							</fieldset>
+						</div>
+				</fieldset>
+
+				<fieldset class="borderedfieldset">
+					<legend><h2>About pizza</h2></legend>
+					<div class="checkbox">
+					<fieldset>
+			 			<legend>Your favourite pizzas?</legend>
+						<label for="pizza1">Margherita</label>
+						<input type="checkbox" name="Pizza1" value="Margherita" id="pizza1">
+						<label for="pizza2">Vegetarian</label>
+						<input type="checkbox" name="Pizza2" value="Vegetarian" id="pizza2">
+						<label for="pizza3">Pepperoni</label>
+						<input type="checkbox" name="Pizza3" value="Pepperoni" id="pizza3">
+						<label for="pizza4">Aussie</label>
+						<input type="checkbox" name="Pizza4" value="Aussie" id="pizza4">
+						<label for="pizza5">Plain Cheese</label>
+						<input type="checkbox" name="Pizza5" value="Plain Cheese" id="pizza5">
+						<label for="pizza6">New York Style</label>
+						<input type="checkbox" name="Pizza6" value="New York Style" id="pizza6">
+						<label for="pizza0">Other</label>
+						<input type="checkbox" name="Pizza0" value="Other" id="pizza0">
+					</fieldset>	
+					</div>
+					<div class="dropdown">
+						<label for="newsltr">Would you like to be subscribed to our newsletter?</label>
+						<select id="newsltr" name="Newsletter">
+								<option value="No">No, I don't want to subscribe.</option>
+								<option value="Weekly">Yes, Send me weekly newsletter!</option>
+								<option value="Monthly">Yes, But just on a monthly basis!</option>
+						</select>
+					</div>
+				</fieldset>
+				
+				<div class="buttoninput">
+				<input type="submit" value="Submit">
+				<input type="reset" value="Reset">
+				</div>
+			</form>
+		</section>
+	</main>
+	
+	<aside>
+		<a href="register.html">
+			<article>
+				<h3>Sign up now!</h3>
+				<img src="images/file000980526552.jpg" alt="photo of pizzeria">
+			</article>
+		</a>
+		<a href="order.html">
+			<article>
+				<h3>Order now!</h3>
+				<img src="images/pexels-eneida-nieves-905847.jpg" alt="photo of pizza">
+			</article>
+		</a>
+	</aside>
+	
+	<footer>
+		<div class="shortinfo"> 
+		<p>
+			Bruno Pizzeria <br>
+			636 Glenferrie Road, Hawthorn 3122 <br>
+			03 9999 XXXX
+		</p>
+		</div>
+		<div class="shortinfo">
+			<p> Opening Hours<br>
+			Mon - Thu 11:00 am - 12 am<br>
+			Fri - Sun 5:00 pm - 12 am
+			</p>
+		</div>
+		<div class="shortinfo">
+			<div class = "socialmedbutton">
+				<a href = "https://www.facebook.com/"><img src ="images/f_logo_RGB-Black_58.png" alt = "Facebook Icon"></a>
+			</div> 
+			<div class = "socialmedbutton">
+				<a  href = "https://www.instagram.com/"><img src = "images/glyph-logo_May2016.png" alt = "Instagram Icon"></a>
+			</div>
+			<div class = "socialmedbutton">
+				<a href = "https://accounts.google.com/"><img src ="images/Email2.png" alt = "Email Icon"> </a>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>

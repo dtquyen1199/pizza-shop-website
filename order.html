@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />	
+	<meta name="description" content="Web development" />
+	<meta name="keywords"    content="Registration Form" />
+	<meta name="author"      content="put your name here" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<script src="js/script3.js"></script>
+	<title>Bruno Pizzeria</title>
+</head>
+<body>
+
+	<header>
+		<div id="logo">
+			<a href="index.html">BRUNO</a>
+		</div>
+		<div id="pages">
+			<nav> 
+				<ul class="nav">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="register.html">SIGN UP</a></li>
+					<li><a class="currentpage" href="order.html">ORDER</a></li>
+					<li><a href="features.html">FEATURES</a></li>	
+				</ul>
+			</nav>
+		</div>
+
+	</header>
+		<div id="heroimgcontainer"> 
+			<div id="heroimage3"></div>
+			<div id="herotext">
+				<h1>Your Order</h1>
+				<p>Delivery or Pickup, we got you covered!</p>
+			</div>
+		</div>
+	
+	<main>
+		<section>
+			<form id="orderform" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php">
+				<fieldset class="borderedfieldset" id="orderdetails">
+					<legend><h2>Your order details</h2></legend>
+					<div class="checkbox">
+						<fieldset>
+							<legend>Choose your pizza</legend> 
+							<input type="number" name="Pizza7" max="30" min="0" id="pizza7" value="0">
+							<label for="pizza7">4-in-1</label>						
+							<input type="number" name="Vegetarian" max="30" min="0" id="pizza8" value="0">
+							<label for="pizza8">Vegetarian</label>
+							<input type="number" name="Pepperoni" max="30" min="0" id="pizza9" value="0">
+							<label for="pizza9">Pepperoni</label>
+							<input type="number" name="Aussie" max="30" min="0" id="pizza10" value="0">
+							<label for="pizza10">Aussie</label>
+							<input type="number" name="Square" max="30" min="0"  id="pizza11" value="0">
+							<label for="pizza11">Square</label>
+							<input type="number" name="Greek" max="30" min="0" id="pizza12" value="0">
+							<label for="pizza12">Greek</label>
+						</fieldset>
+					</div>
+					<div class="radioinput">
+						<fieldset>
+								<legend>Delivery or pickup</legend>
+								<input id="deliver" type="radio" name="delivery or pickup" value="delivered" required="required">
+								<label for="deliver">Delivery</label>
+								<input id="pickup" type="radio" name="delivery or pickup" value="pickup" required="required">
+								<label for="pickup">Pickup</label>
+						</fieldset>
+						<fieldset>
+								<legend>Pay now or later</legend>
+								<input id="payonline" type="radio" name="pay online now or later" value="pay online" required="required">
+								<label for="payonline">Now</label>
+								<input id="paylater" type="radio" name="pay online now or later" value="pay later" required="required">
+								<label for="paylater">Later</label>
+						</fieldset>
+					</div>
+				</fieldset>
+
+
+				<fieldset id="delivadd" class="borderedfieldset">
+					<legend><h2>Delivery address</h2></legend>
+					<div>
+						<label for="streetadd">Street Address</label>
+						<input id="streetadd" type="text" name="street address (delivery)" maxlength="60"><br>
+					</div>
+					<div>
+						<label for="city">City</label> 
+						<input id="city" type="text" name="city (delivery)" maxlength="20"><br>
+					</div>
+					<div>
+						<label for="postcode">Postcode</label>
+						<input id="postcode" type="text" name="postcode (delivery)" maxlength="4">
+					</div>
+					<div>
+						<label for="state">State (we only deliver in Greater Melbourne, VIC)</label>
+						<select id="state" name="state (delivery)" >
+							<option value="VIC" selected="selected">VIC</option>
+						</select>
+					</div>
+				</fieldset>
+				
+				<fieldset id="billadd" class="borderedfieldset">
+					<legend><h2>Billing address</h2></legend>
+					<div>
+						<label for="sameadd">Same as delivery address</label>
+						<input id="sameadd" type="checkbox" name="sameadd" value="same as delivery"><br>
+					</div>
+					<div>
+						<label for="streetadd2">Street Address</label>
+						<input id="streetadd2" type="text" name="street address (billing)" maxlength="60" value=""><br>
+					</div>
+					<div>
+						<label for="city2">City</label>
+						<input id="city2" type="text" name="city  (billing)" maxlength="20"><br>
+					</div>
+					<div>
+						<label for="postcode2">Postcode</label>
+						<input id="postcode2" type="text" name="postcode  (billing)" maxlength="4">
+					</div>
+					<div>
+						<label for="state2">State</label>
+							<select id="state2" name="state (billing)" >
+								<option value="" disabled selected hidden>Select</option>
+								<option value="ACT">ACT</option>
+								<option value="NSW">NSW</option>
+								<option value="NT">NT</option>
+								<option value="QLD">QLD</option>
+								<option value="SA">SA</option>
+								<option value="TAS">TAS</option>
+								<option value="VIC">VIC</option>
+								<option value="WA">WA</option>
+							</select>
+					</div>
+				</fieldset>
+			
+				<fieldset id="contactinfo" class="borderedfieldset">
+					<legend><h2>Contact</h2></legend>
+					<div>
+						<label for="phone">Contact number</label>
+						<input id="phone" type="text" name="phone number" maxlength="10" size="10"><br>
+					</div>
+					<div>
+						<label for="email">Email for receipt</label>
+						<input id="email" type="text" name="email" maxlength="80" size="40"><br>
+					</div>	
+				</fieldset>
+			
+				<fieldset id="paymentinfo" class="borderedfieldset">
+					<legend><h2>Payment Info</h2></legend>
+					<div class="radioinput">
+						<fieldset>
+							<legend>Card Type</legend>
+							<input id="visa" type="radio" name="cardtype" value="Visa"/>
+							<label for="visa">Visa</label>
+							<input id="master" type="radio" name="cardtype" value="Master"/>
+							<label for="master">Master</label>
+							<input id="amex" type="radio" name="cardtype" value="Amex"/>
+							<label for="amex">America Express</label>	
+						</fieldset>
+					</div>
+					<div>
+						<label for="cardnumber">Card Number</label>
+						<input id="cardnumber" type="text" name="credit card" maxlength="16" minlength="16" size="40">
+					</div>
+				</fieldset>
+				<div class="buttoninput"> 
+					<input type="submit" value="Submit">
+					<input type="reset" value="Reset">
+				</div>		
+			</form>
+		</section>
+	</main>
+	
+	<aside>
+		<a href="register.html">
+			<article>
+				<h3>Sign up now!</h3>
+				<img src="images/file000980526552.jpg" alt="photo of pizzeria">
+			</article>
+		</a>
+		<a href="order.html">
+			<article>
+				<h3>Order now!</h3>
+				<img src="images/pexels-eneida-nieves-905847.jpg" alt="photo of pizza">
+			</article>
+		</a>
+	</aside>
+	
+	<footer>
+		<div class="shortinfo"> 
+		<p>
+			Bruno Pizzeria <br>
+			636 Glenferrie Road, Hawthorn 3122 <br>
+			03 9999 XXXX
+		</p>
+		</div>
+		<div class="shortinfo">
+			<p> Opening Hours<br>
+			Mon - Thu 11:00 am - 12 am<br>
+			Fri - Sun 5:00 pm - 12 am
+			</p>
+		</div>
+		<div class="shortinfo">
+			<div class = "socialmedbutton">
+				<a href = "https://www.facebook.com/"><img src ="images/f_logo_RGB-Black_58.png" alt = "Facebook Icon"></a>
+			</div> 
+			<div class = "socialmedbutton">
+				<a  href = "https://www.instagram.com/"><img src = "images/glyph-logo_May2016.png" alt = "Instagram Icon"></a>
+			</div>
+			<div class = "socialmedbutton">
+				<a href = "https://accounts.google.com/"><img src ="images/Email2.png" alt = "Email Icon"> </a>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
